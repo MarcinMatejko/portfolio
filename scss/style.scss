@@ -1,0 +1,180 @@
+@import 'config';
+@import 'utilities';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: $background-color;
+  color: $secondary-color;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary-color;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+// Navbar
+.navbar {
+  background-color: $background-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  border-bottom: solid 1px $secondary-color;
+  opacity: 0.9;
+
+  ul {
+    display: flex;
+  }
+
+  a {
+    color: $primary-color;
+    padding: 0.45rem;
+    margin: 0 0.25rem;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+// Home
+.home {
+  display: flex;
+  height: 100vh;
+  padding: 4rem 6rem;
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-text {
+      color: $primary-color;
+    }
+  }
+  @media (min-width: 900px) {
+    &-inner {
+      max-width: 50vw;
+    }
+  }
+
+  .photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    .myPhoto {
+      width: 350px;
+      height: 350px;
+      border-radius: 15px;
+    }
+  }
+  @media (max-width: 900px) {
+    padding: 2rem;
+  }
+  @media (max-width: 700px) {
+    padding: 4rem;
+
+    .photo {
+      display: none;
+    }
+  }
+}
+
+.projects-section {
+  height: 100vh;
+  background: $primary-color;
+  padding: 1rem 2rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+}
+.project {
+  position: relative;
+  width: 300px;
+  height: 500px;
+
+  &-box {
+    padding: 1.5rem;
+  }
+
+  &-front,
+  &-back {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    backface-visibility: hidden;
+    transition: transform 800ms;
+  }
+
+  &-front {
+    background: $background-color;
+  }
+  &-back {
+    background: $secondary-color;
+    color: $primary-color;
+  }
+
+  &-title {
+    text-align: center;
+  }
+
+  &-picture {
+    margin: 1rem 0;
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+
+    .btn {
+      color: $primary-color;
+    }
+
+    .btn:hover {
+      color: $third-color;
+    }
+  }
+}
+
+.project .project-front {
+  transform: perspective(900px) rotateY(0deg);
+}
+
+.project .project-back {
+  transform: perspective(900px) rotateY(180deg);
+}
+
+.project:hover .project-front {
+  transform: perspective(900px) rotateY(-180deg);
+}
+
+.project:hover .project-back {
+  transform: perspective(900px) rotateY(0deg);
+}
