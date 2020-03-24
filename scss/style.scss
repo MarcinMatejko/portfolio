@@ -117,6 +117,7 @@ img {
 
   &-box {
     padding: 1.5rem;
+    height: 100%;
   }
 
   &-front,
@@ -133,10 +134,31 @@ img {
 
   &-front {
     background: $background-color;
+    transform: perspective(900px) rotateY(0deg);
+  }
+
+  &:hover {
+    .project-front {
+      transform: perspective(900px) rotateY(-180deg);
+    }
   }
   &-back {
     background: $secondary-color;
     color: $primary-color;
+
+    .project-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    transform: perspective(900px) rotateY(180deg);
+  }
+
+  &:hover {
+    .project-back {
+      transform: perspective(900px) rotateY(0deg);
+    }
   }
 
   &-title {
@@ -150,7 +172,6 @@ img {
   &-buttons {
     display: flex;
     justify-content: space-around;
-    margin-top: 0.5rem;
     font-size: 1.5rem;
 
     .btn {
@@ -161,20 +182,19 @@ img {
       color: $third-color;
     }
   }
-}
 
-.project .project-front {
-  transform: perspective(900px) rotateY(0deg);
-}
+  &-technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem;
+  }
+  &-logo {
+    width: 50px;
+    padding: 5px;
 
-.project .project-back {
-  transform: perspective(900px) rotateY(180deg);
-}
-
-.project:hover .project-front {
-  transform: perspective(900px) rotateY(-180deg);
-}
-
-.project:hover .project-back {
-  transform: perspective(900px) rotateY(0deg);
+    &:hover {
+      width: 60px;
+    }
+  }
 }
