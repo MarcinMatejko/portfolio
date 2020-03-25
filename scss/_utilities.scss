@@ -1,8 +1,17 @@
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
 // Text Styles
 .x-large {
   font-size: 5rem;
   line-height: 1.2;
   color: $third-color;
+
+  @media (max-width: 750px) {
+    font-size: 3.5rem;
+  }
 }
 
 .description {
