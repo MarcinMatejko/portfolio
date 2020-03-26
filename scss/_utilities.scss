@@ -33,3 +33,19 @@
   margin: 1.5rem;
   color: $third-color;
 }
+
+@media (max-width: 700px) {
+  .section-header {
+    font-size: 2.3rem;
+    text-align: center;
+    padding: 2rem 1rem;
+    color: $third-color;
+  }
+
+  .section-subheader {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1.5rem;
+    color: $third-color;
+  }
+}

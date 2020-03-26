@@ -13,7 +13,7 @@ html {
 body {
   background: $background-color;
   color: $secondary-color;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -53,9 +53,15 @@ img {
     color: $primary-color;
     padding: 0.45rem;
     margin: 0 0.25rem;
+    font-weight: bold;
 
     &:hover {
-      color: $fourth-color;
+      color: $third-color;
+    }
+  }
+  @media (max-width: 450px) {
+    a {
+      font-size: 0.8rem;
     }
   }
 }
@@ -72,9 +78,11 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-right: 1.5rem;
 
     &-text {
       color: $primary-color;
+      text-align: justify;
     }
   }
   @media (min-width: 900px) {
@@ -104,10 +112,18 @@ img {
       display: none;
     }
   }
+  @media (max-width: 550px) {
+    padding: 2rem;
+    &-inner {
+      padding-right: 0;
+    }
+  }
 }
 
 .projects-section {
-  background: $fourth-color;
+  background: url('../img/back.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
 }
 
 .projects {
@@ -145,6 +161,8 @@ img {
   &-front {
     background: $background-color;
     color: $primary-color;
+    text-align: justify;
+    font-size: 1.2rem;
     transform: perspective(900px) rotateY(0deg);
   }
 
@@ -163,6 +181,10 @@ img {
       justify-content: space-between;
     }
 
+    .project-title {
+      color: $primary-color;
+    }
+
     transform: perspective(900px) rotateY(180deg);
   }
 
@@ -174,6 +196,7 @@ img {
 
   &-title {
     text-align: center;
+    color: $third-color;
   }
 
   &-picture {
@@ -190,7 +213,7 @@ img {
     }
 
     .btn:hover {
-      color: $fourth-color;
+      color: $secondary-color;
     }
   }
 
@@ -206,6 +229,23 @@ img {
 
     &:hover {
       width: 60px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    margin: 1rem;
+
+    &-front {
+      font-size: 1.1rem;
+    }
+  }
+  @media (max-width: 350px) {
+    margin: 0.8rem;
+    &-front {
+      font-size: 1rem;
     }
   }
 }
@@ -242,10 +282,21 @@ img {
       margin: 0.6rem;
     }
   }
+
+  @media (max-width: 400px) {
+    &-logo {
+      width: 80px;
+      height: 80px;
+      padding: 0.8rem;
+      margin: 0.6rem;
+    }
+  }
 }
 
 .contact {
-  background: $fourth-color;
+  background: url('../img/contact.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
   padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
@@ -254,14 +305,31 @@ img {
   &-wrapper {
     display: flex;
     flex-direction: row;
-    color: $background-color;
+    color: $primary-color;
+
+    @media (max-width: 1100px) {
+      padding: 0 4rem;
+    }
+    @media (max-width: 850px) {
+      padding: 0 2rem;
+    }
   }
 
   &-info {
+    padding: 1rem;
+    padding-right: 2rem;
   }
 
   &-subheader {
     font-size: 1.5rem;
+  }
+
+  &-list {
+    padding-top: 1rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   &-list-item {
     padding: 0.5rem 0;
@@ -272,10 +340,6 @@ img {
     width: 40vw;
     &-group {
       margin: 1.2rem 0;
-    }
-    &-text {
-      display: block;
-      margin-top: 0.3rem;
     }
 
     input[type='text'],
@@ -301,20 +365,50 @@ img {
     }
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 720px) {
     &-wrapper {
       display: flex;
       flex-direction: column;
+    }
+    .form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 450px) {
+    &-wrapper {
+      padding: 0 1rem;
+    }
+    &-info {
+      width: 100%;
+      padding: 0 0.5rem;
+    }
+
+    &-subheader {
+      font-size: 1.3rem;
+    }
+
+    &-list {
+      padding-top: 1rem;
+      font-weight: normal;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &-list-item {
+      padding: 0.5rem 0;
+      font-size: 1.5rem;
+    }
+    .form {
+      &-group {
+        margin: 0.8rem 0;
+      }
     }
   }
 }
 
 .footer {
-  // height: 3rem;
-  // display: flex;
-
-  // justify-content: center;
-
   &-buttons {
     display: flex;
     justify-content: center;
@@ -326,7 +420,7 @@ img {
     }
 
     .btn:hover {
-      color: $fourth-color;
+      color: $primary-color;
     }
   }
 }
