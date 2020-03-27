@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav class="navbar" id="navbar">
-      <h1><a href="#home">Home</a></h1>
+      <a href="#home">Home</a>
       <ul>
         <li><a href="#projects">Projekty</a></li>
         <li><a href="#technologies">Technologie</a></li>
@@ -24,26 +24,28 @@
     <section class="home" id="home">
       <div class="home-inner">
         <h1 class="x-large">Marcin Matejko</h1>
-        <p class="description">JavaScript Developer</p>
+        <h2 class="description">JavaScript Developer</h2>
         <div class="home-inner-text">
-          <h2 class="home-subheader">Cześć</h2>
+          <p class="home-subheader">Cześć</p>
           <p class="home-text">
-            Jestem samoukiem z Bielska-Białej. Aktualnie rozwijam się w React.js, oraz MERN Stacku. Znam też podstawy Angulara, oraz TypeScripta. Poniżej kilka moich projektów, oraz więcej informacji na mój temat.
+            Jestem samoukiem z Bielska-Białej. Aktualnie rozwijam się w React.js, oraz MERN Stacku. Znam też podstawy Angulara oraz TypeScripta. Poniżej kilka moich projektów, oraz więcej informacji na mój temat.
           </p>
         </div>
       </div>
 
       <div class="photo">
-        <img
-          class="myPhoto"
-          src="img/Marcin.JPG"
-          alt="Marcin Matejko zdjęcie"
-        />
+        <figure>
+          <img
+            class="myPhoto"
+            src="img/Marcin.JPG"
+            alt="Marcin Matejko zdjęcie"
+          />
+        </figure>
       </div>
     </section>
     <section id="projects" class="projects-section">
       <h2 class="section-header">Projekty</h2>
-      <h3 class="projects-subheader container">
+      <p class="projects-subheader container">
         Znajdują się tutaj tylko projekty wykonane całkowicie przeze mnie. Dlatego pominąłem wszelkiego rodzaju todolisty, kamień papier nożyce i podobne projekty wykonane na kursach. Więcej projektów możesz znaleźć na moim <a
         href="https://github.com/MarcinMatejko"
         class="projects-subheader-btn"
@@ -51,7 +53,7 @@
         rel="noopener"
         ><i class="fab fa-github"></i>Github-ie</a
       >.
-      </h3>
+      </p>
       <div class="projects container">
         <div class="project">
           <div class="project-front">
@@ -261,7 +263,7 @@
               </div>
               <div class="project-buttons">
                 <a
-                  href="http://www.marcinmatejko.pl/"
+                  href="https://www.marcinmatejko.pl/"
                   class="btn"
                   target="_blank"
                   rel="noopener"
@@ -362,26 +364,30 @@
             method="POST"
           >
             <div class="form-group">
-              <label>
-                <input type="text" name="Imie" placeholder="Imię i Nazwisko" />
+              <label for="Imie">
+                <input type="text" name="Imie" id="Imie" placeholder="Imię i Nazwisko" required />
               </label>
             </div>
             <div class="form-group">
-              <label>
+              <label for="email">
                 <input
-                  type="text"
+                  type="email"
+                  id="email"
                   name="_replyto"
                   placeholder="Twój adres email"
+                  required
                 />
               </label>
             </div>
             <div class="form-group">
-              <label>
+              <label for="message">
                 <textarea
                   class="textarea"
                   name="message"
+                  id="message"
                   rows="5"
                   placeholder="Twoja wiadomość..."
+                  required
                 ></textarea>
               </label>
             </div>
