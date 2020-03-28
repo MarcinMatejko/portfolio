@@ -2,7 +2,7 @@
 
 ## Moje porfolio 
 
-# Wykonane tylko w HTML, SCSS, oraz JS.
+### Wykonane tylko w HTML, SCSS, oraz JS.
 
 Zamysł był taki, żeby to była prosta, estetyczna i intuicyjna strona. Moim zdaniem mi się udało. \ 
 
