@@ -64,7 +64,8 @@ img {
   &-home {
     font-size: 1.4rem;
   }
-  @media (max-width: 450px) {
+
+  @media (max-width: 520px) {
     a {
       font-size: 0.8rem;
     }
@@ -72,8 +73,8 @@ img {
       font-size: 1rem;
     }
   }
-  @media (max-width: 350px) {
-    font-size: 0.6rem;
+  @media (max-width: 450px) {
+    font-size: 0.7rem;
     padding: 0.7rem 1rem;
 
     a {
@@ -84,6 +85,22 @@ img {
     }
     &-home {
       font-size: 0.8rem;
+    }
+  }
+  @media (max-width: 370px) {
+    a {
+      font-size: 0.7rem;
+    }
+    &-home {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 335px) {
+    a {
+      font-size: 0.6rem;
+    }
+    &-home {
+      font-size: 1rem;
     }
   }
 }
@@ -107,6 +124,28 @@ img {
       text-align: justify;
     }
   }
+
+  &-btn {
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid $third-color;
+    background-color: $primary-color;
+    border-radius: 8px 0;
+    color: $third-color;
+    font-family: 'Raleway', sans-serif;
+
+    &:hover {
+      background-color: $third-color;
+      border-bottom: 3px solid $primary-color;
+      color: $primary-color;
+    }
+  }
+
   @media (min-width: 900px) {
     &-inner {
       max-width: 50vw;
@@ -136,7 +175,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    // width: 60%;
     .myPhoto {
       width: 350px;
       height: 350px;
@@ -157,6 +195,60 @@ img {
     padding: 2rem;
     &-inner {
       padding-right: 0;
+    }
+  }
+}
+
+.about {
+  background-color: $primary-color;
+  padding-bottom: 3rem;
+  display: none;
+
+  &-text {
+    color: $background-color;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: justify;
+
+    &-header {
+      font-size: 2rem;
+      text-decoration: solid underline $third-color;
+    }
+  }
+
+  &-btn {
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: $background-color;
+    border-bottom: 3px solid $third-color;
+    border-radius: 8px 0;
+    color: $third-color;
+    font-family: 'Raleway', sans-serif;
+
+    &:hover {
+      background-color: $third-color;
+      border-bottom: 3px solid $background-color;
+      color: $background-color;
+    }
+  }
+
+  @media (max-width: 1150px) {
+    padding: 0 2rem 2rem 2rem;
+  }
+  @media (max-width: 550px) {
+    padding: 0 1rem 1.5rem 1rem;
+
+    &-text {
+      font-size: 1rem;
+      &-header {
+        font-size: 1.5rem;
+        text-decoration: solid underline $third-color;
+      }
     }
   }
 }
@@ -426,8 +518,11 @@ img {
       width: 100%;
       padding: 0.4rem;
       font-size: 1.2rem;
-      border: 1px solid $secondary-color;
-      border-radius: 5px;
+      border: none;
+      outline: none;
+      border-bottom: 3px solid $third-color;
+      background-color: $primary-color;
+      border-radius: 8px 0;
       color: $third-color;
       font-family: 'Raleway', sans-serif;
     }
@@ -437,8 +532,9 @@ img {
     }
 
     button[type='submit']:hover {
-      border: 1px solid $third-color;
-      color: $third-color;
+      background-color: $third-color;
+      border-bottom: 3px solid $primary-color;
+      color: $primary-color;
     }
   }
 

@@ -15,6 +15,7 @@
     <nav class="navbar" id="navbar">
       <a href="#home">Home</a>
       <ul>
+        <li><a href="#about" id="about-nav">O mnie</a></li>
         <li><a href="#projects">Projekty</a></li>
         <li><a href="#technologies">Technologie</a></li>
         <li><a href="#contact">Kontakt</a></li>
@@ -31,6 +32,7 @@
             Jestem samoukiem z Bielska-Białej. Aktualnie rozwijam się w MERN Stacku, z głównym naciskiem na React. Znam też podstawy Angulara oraz TypeScripta. Poniżej kilka moich projektów, oraz więcej informacji na mój temat.
           </p>
         </div>
+        <button class="home-btn" id="show-btn">Więcej o mnie</button>
       </div>
 
       <div class="photo">
@@ -41,6 +43,19 @@
             alt="Marcin Matejko zdjęcie"
           />
         </figure>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h2 class="section-header">O mnie</h2>
+      <div class="about-text container">
+        <h3 class="about-text-header">Prywatnie.</h3>
+        <p>Jestem mężem i ojcem dwójki dzieci. Ogromnym fanem piłki nożnej, gier planszowych, a od niedawna także klocków Lego Technics. Interesuję się rozwojem osobistym, czytam dużo książek i słucham wartościowych podcastów. Przez ponad rok prowadziłem kanał na YouTubie na temat życia w Szwecji, a w młodości nagrałem kilka płyt jako raper. Jedną wydałem w formie fizycznej, a także samodzielnie zorganizowałem kilka koncertów.</p>
+        <h3 class="about-text-header">Zawodowo.</h3>
+        <p>Dotychczas pracowałem jako kucharz, dzięki czemu jestem przyzwyczajony do pracy w stresie i pod presją czasu. Dobrze odnajduję się w pracy w grupie wnosząc do niej dużo pozytywnej energii oraz potrafiąc rozładować napiętą atmosferę lub zdusić konflikt w zarodku.</p>
+        <p>Przez ponad rok pracowałem w Sztokholmie, gdzie w większości do komunikacji używałem języka angielskiego, dzięki czemu jest on u mnie na bardzo wysokim poziomie, zarówno w mowie jak i w piśmie.</p>
+        <p>Pracowałem również jako agent nieruchomości szlifując swoje umiejętności miękkie takie jak pozyskiwanie oraz praca z klientem. Samodzielnie przygotowywałem oferty, prezentowałem, negocjowałem i sprzedawałem powierzone mi nieruchomości.</p>
+        <p>W życiu robię, to co lubię robić i w czym dobrze się odnajduję. Moja żona mówi, że jak się na coś uprę, to to zrobię. Tak było gdy nagrywałem i wydawałem płyty jako raper, gdy uznałem że zostanę kucharzem, mimo iż skończyłem liceum ogólnokształcące. Tak było również gdy spakowałem rodzinę i wyjechaliśmy, żeby na rok zamieszkać i pracować w Sztokholmie, albo gdy zostałem agentem nieruchomości. Tak jest i teraz, gdy postanowiłem, że powrócę do hobby z liceum i zostane JavaScript developerem.</p>
+        <button class="about-btn" id="hide-btn">Zwiń o mnie</button>
       </div>
     </section>
     <section id="projects" class="projects-section">
@@ -65,9 +80,9 @@
                 class="project-picture"
               />
               <p class="project-description">
-                Strona wizytówka fotografa przygotowana dla mojej żony. W tym
+                Strona wizytówka fotografa rodzinnego. W tym
                 projekcie odpowiadałem za wszystko, od projektu, po kupno
-                domeny, oraz wrzucenie projektu na hosting.
+                domeny oraz wrzucenie projektu na hosting.
               </p>
             </div>
           </div>
@@ -375,7 +390,6 @@
                   id="email"
                   name="_replyto"
                   placeholder="Twój adres email"
-                  required
                 />
               </label>
             </div>
