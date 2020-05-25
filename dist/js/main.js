@@ -45,3 +45,27 @@ aboutNav.addEventListener('click', function () {
     behavior: 'smooth',
   });
 });
+
+const showTechBtn = document.querySelector('#show-technologies-more-btn');
+const hideTechBtn = document.querySelector('#hide-technologies-more-btn');
+const tech = document.querySelector('#technologies-more');
+showTechBtn.addEventListener('click', function () {
+  if (tech.style.display == 'block') {
+    tech.style.display = 'none';
+    showTechBtn.innerText = 'Więcej o technologiach';
+  } else {
+    tech.style.display = 'block';
+    showTechBtn.innerText = 'Zwiń';
+    document.getElementById('technologies-more').scrollIntoView({
+      behavior: 'smooth',
+    });
+  }
+});
+
+hideTechBtn.addEventListener('click', function () {
+  tech.style.display = 'none';
+  showTechBtn.innerText = 'Więcej o technologiach';
+  document.getElementById('contact').scrollIntoView({
+    behavior: 'smooth',
+  });
+});
