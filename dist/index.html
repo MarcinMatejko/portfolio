@@ -9,6 +9,7 @@
     ></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Marcin Matejko - JavaScript Developer</title>
   </head>
   <body>
@@ -23,19 +24,19 @@
     </nav>
 
     <section class="home" id="home">
-      <div class="home-inner">
-        <h1 class="x-large">Marcin Matejko</h1>
-        <h2 class="description">Frontend Developer</h2>
-        <div class="home-inner-text">
+      <div class="home-inner" >
+        <h1 class="x-large" data-aos="fade-down-right">Marcin Matejko</h1>
+        <h2 class="description" data-aos="fade-right">Frontend Developer</h2>
+        <div class="home-inner-text" data-aos="fade-up-right">
           <p class="home-subheader">Cześć</p>
           <p class="home-text">
             Jestem freelancerem z Bielska-Białej. Aktualnie rozwijam się w MERN Stacku, z głównym naciskiem na React. Znam też podstawy Angulara oraz TypeScripta. Poniżej kilka moich projektów, oraz więcej informacji na mój temat.
           </p>
         </div>
-        <button class="home-btn" id="show-btn">Więcej o mnie</button>
+        <button class="home-btn" id="show-btn" data-aos="fade-up-right">Więcej o mnie</button>
       </div>
 
-      <div class="photo">
+      <div class="photo" data-aos="fade-left">
         <figure>
           <img
             class="myPhoto"
@@ -59,8 +60,8 @@
       </div>
     </section>
     <section id="projects" class="projects-section">
-      <h2 class="section-header">Projekty</h2>
-      <p class="projects-subheader container">
+      <h2 class="section-header" data-aos="fade-up">Projekty</h2>
+      <p class="projects-subheader container" data-aos="fade-up">
         Znajdują się tutaj tylko projekty wykonane całkowicie przeze mnie. Dlatego pominąłem wszelkiego rodzaju todolisty, kamień papier nożyce i podobne projekty wykonane na kursach. Więcej projektów możesz znaleźć na moim <a
         href="https://github.com/MarcinMatejko"
         class="projects-subheader-btn"
@@ -71,7 +72,7 @@
       </p>
       <div class="projects container">
 
-        <div class="project">
+        <div class="project" data-aos="fade-up">
           <div class="project-front">
             <div class="project-box ">
               <h3 class="project-title">Punktator</h3>
@@ -135,7 +136,7 @@
           </div>
         </div>
 
-        <div class="project">
+        <div class="project" data-aos="fade-up">
           <div class="project-front">
             <div class="project-box ">
               <h3 class="project-title">Aleksandra Matejko Fotografia</h3>
@@ -196,7 +197,7 @@
           </div>
         </div>
 
-        <div class="project">
+        <div class="project" data-aos="fade-up">
           <div class="project-front">
             <div class="project-box ">
               <h3 class="project-title">Restauracja Pyszna</h3>
@@ -246,7 +247,7 @@
           </div>
         </div>
 
-        <div class="project">
+        <div class="project" data-aos="fade-up">
           <div class="project-front">
             <div class="project-box ">
               <h3 class="project-title">Marcin Matejko</h3>
@@ -304,76 +305,87 @@
     </section>
 
     <section id="technologies" class="technologies-section">
-      <h2 class="section-header">Technologie które znam.</h2>
-      <h3 class="section-subheader technologies-subheader">Bardzo dobrze:</h3>
+      <h2 class="section-header" data-aos="fade-up">Technologie które znam.</h2>
+      <h3 class="section-subheader technologies-subheader" data-aos="fade-up">Bardzo dobrze:</h3>
       <div class="technologies-box container">
         
         <img
           class="technologies-logo"
           src="img/logos/Html.svg"
           alt="Html-logo"
+          data-aos="flip-left"
         />
-        <img class="technologies-logo" src="img/logos/Css.svg" alt="Css-logo" />
+        <img class="technologies-logo" src="img/logos/Css.svg" alt="Css-logo" data-aos="flip-left"/>
         <img
           class="technologies-logo"
           src="img/logos/Sass.svg"
           alt="Sass-logo"
+          data-aos="flip-left"
         />
         <img
           class="technologies-logo"
           src="img/logos/Bootstrap.svg"
           alt="Bootstrap-logo"
+          data-aos="flip-left"
         />
         <img
           class="technologies-logo"
           src="img/logos/Javascript.svg"
           alt="Javascript-logo"
+          data-aos="flip-left"
         />
         <img
           class="technologies-logo"
           src="img/logos/React.svg"
           alt="React-logo"
+          data-aos="flip-left"
         />
         <img
           class="technologies-logo"
           src="img/logos/Redux.svg"
           alt="Redux-logo"
+          data-aos="flip-left"
         />
         
-        <img class="technologies-logo" src="img/logos/Git.svg" alt="Git-logo" />
+        <img class="technologies-logo" src="img/logos/Git.svg" alt="Git-logo" data-aos="flip-left" />
       </div>
 
-      <h3 class="section-subheader">Dobrze:</h3>
+      <h3 class="section-subheader" data-aos="fade-up">Dobrze:</h3>
 
       <div class="technologies-box container">
         <img
           class="technologies-logo"
           src="img/logos/Angular.svg"
           alt="Angular-logo"
+          data-aos="flip-left"
         />
         <img
           class="technologies-logo"
           src="img/logos/Typescript.svg"
           alt="Typescript-logo"
+          data-aos="flip-left"
         />
         
         <img
           class="technologies-logo"
           src="img/logos/Mongodb.svg"
           alt="Mongodb-logo"
+          data-aos="flip-left"
         />
         <img
           class="technologies-logo"
           src="img/logos/Node Js.svg"
           alt="Node-logo"
+          data-aos="flip-left"
         />
         <img
           class="technologies-logo"
           src="img/logos/Express.svg"
           alt="Express-logo"
+          data-aos="flip-left"
         />
       </div>
-      <button class="technologies-more-btn container" id="show-technologies-more-btn">Więcej o technologiach.</button>
+      <button class="technologies-more-btn container" id="show-technologies-more-btn" data-aos="fade-up">Więcej o technologiach.</button>
     </section>
     <section class="technologies-more" id="technologies-more">
       <div class="technologies-more-text container">
@@ -384,7 +396,7 @@
           class="btn"
           target="_blank"
           rel="noopener"
-          >Pyszna</a>. W międzyczasie poznałem GITa, historię internetu, obsługę Netlify, a także zaprzyjaźniłem się z terminalem oraz nauczyłem Bootstrapa. We wszystkich projektach bardzo mocno dbam o RWD, więc wszystkie strony/aplikacje świetnie wyglądają na zarówno na komputerach jak i tabletach i telefonach.</p>
+          >Pyszna</a>. W międzyczasie poznałem GITa, historię internetu, obsługę Netlify, a także zaprzyjaźniłem się z terminalem oraz nauczyłem Bootstrapa. We wszystkich projektach bardzo mocno dbam o RWD, więc wszystkie strony/aplikacje świetnie wyglądają zarówno na komputerach jak i na tabletach i telefonach.</p>
         <h3 class="technologies-more-text-header">Angular</h3>
         <p>Następnie zacząłem około połroczną przygodę z Angularem i Type-Scriptem, poznałem Ionica oraz Material. Efektem nauki była strona <a
           href="https://aleksandramatejko.pl/"
@@ -405,9 +417,9 @@
       </div>
     </section>
     <section id="contact" class="contact">
-      <h2 class="section-header">Kontakt</h2>
+      <h2 class="section-header" data-aos="fade-up">Kontakt</h2>
       <div class="contact-wrapper container">
-        <div class="contact-info">
+        <div class="contact-info" data-aos="fade-up-right">
           <h3 class="contact-subheader">
             Jeśli jesteś zainteresowany współpracą, albo posiadasz zlecenie, które mógłbym dla Ciebie zrealizować, to zapraszam do kontaktu.
           </h3>
@@ -416,7 +428,7 @@
             <a class="contact-list-item" href="tel:+48-736-643-949"><i class="fas fa-phone-square-alt"></i> +48 736-643-949</a>
           </address>
         </div>
-        <div class="contact-form">
+        <div class="contact-form" data-aos="fade-up-left">
           <form
             class="form"
             action="https://formspree.io/mgezdvjy"
@@ -479,5 +491,13 @@
       </div>
     </fotter>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 100,
+        duration: 1300,
+        offset: 200,
+      });
+    </script>
   </body>
 </html>
